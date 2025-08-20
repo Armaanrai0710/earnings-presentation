@@ -1,62 +1,93 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reveal.js core -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/black.min.css" id="theme">
+
+    <!-- Highlight.js syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        
-        <!-- Markdown Slide -->
+
+        <!-- Slide 1: Title -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Email: <strong>24ds2000041@ds.study.iitm.ac.in</strong></p>
+          <aside class="notes">
+            Introduce yourself, and mention this presentation uses Reveal.js with interactive elements.
+          </aside>
+        </section>
+
+        <!-- Slide 2: Markdown example -->
         <section data-markdown>
           <textarea data-template>
-            # Quarterly Earnings Report  
-            **Prepared by:** 24ds2000041@ds.study.iitm.ac.in  
+            ## Key Highlights (Markdown Slide)
+            - Revenue growth of **12%**
+            - Net profit margin up by **3%**
+            - Strong customer retention
+
+            *This slide is written in Markdown.*
           </textarea>
+          <aside class="notes">
+            Explain that this slide was written in Markdown and rendered automatically.
+          </aside>
         </section>
 
-        <!-- Animated fragments -->
+        <!-- Slide 3: Fragments for animation -->
         <section>
-          <h2>Highlights</h2>
-          <p class="fragment">Revenue ↑ 15%</p>
-          <p class="fragment">Expenses ↓ 7%</p>
-          <p class="fragment">Net Profit ↑ 22%</p>
+          <h2>Strategic Priorities</h2>
+          <ul>
+            <li class="fragment">Expand into new markets</li>
+            <li class="fragment">Enhance digital platforms</li>
+            <li class="fragment">Increase customer satisfaction</li>
+          </ul>
+          <aside class="notes">
+            Use fragment animations to reveal each priority one at a time.
+          </aside>
         </section>
 
-        <!-- Code sample with syntax highlighting -->
+        <!-- Slide 4: Code with syntax highlighting -->
         <section>
           <h2>Python Snippet</h2>
-          <pre><code class="python">
+          <pre><code class="language-python">
 import pandas as pd
+
+# Load quarterly earnings
 df = pd.read_csv("earnings.csv")
 print(df.describe())
           </code></pre>
+          <aside class="notes">
+            Show how simple Python code can be used to analyze earnings data.
+          </aside>
         </section>
 
-        <!-- Mathematical equation -->
+        <!-- Slide 5: Math Equation -->
         <section>
           <h2>Financial Formula</h2>
-          <p>\( ROI = \frac{Net\ Profit}{Investment} \times 100 \)</p>
-        </section>
-
-        <!-- Slide with speaker notes -->
-        <section>
-          <h2>Next Steps</h2>
+          <p>\[
+            ROI = \frac{Net\ Profit}{Total\ Investment} \times 100
+          \]</p>
           <aside class="notes">
-            Emphasize importance of targeted retention campaigns and cost optimization.
+            Explain the ROI formula and how it's relevant to quarterly performance.
           </aside>
         </section>
 
       </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/math/math.min.js"></script>
+
     <script>
       Reveal.initialize({
         hash: true,
@@ -65,3 +96,4 @@ print(df.describe())
     </script>
   </body>
 </html>
+
